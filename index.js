@@ -7,23 +7,23 @@ document.getElementById("btn").addEventListener("click", function () {
   var roundBMI = Math.round(_BMI * 10) / 10;
   //   more simple
   var bmiMassage;
-  var bmiNum;
+  var bmiNum = `${roundBMI}`;
   if (roundBMI < 18.5) {
     bmiMassage = `Underweight`;
-    bmiNum = `${roundBMI}`;
+    bmiNum;
   } else if (roundBMI >= 18.5 && roundBMI <= 24.9) {
     bmiMassage = `Normal`;
-    bmiNum = `${roundBMI}`;
+    bmiNum;
   } else if (roundBMI >= 25 && roundBMI <= 29.9) {
     bmiMassage = `Overweight`;
-    bmiNum = `${roundBMI}`;
+    bmiNum;
   } else if (roundBMI >= 30 && roundBMI <= 34.9) {
     bmiMassage = `Obese`;
-    bmiNum = ` ${roundBMI}`;
+    bmiNum;
   } else {
     bmiMassage = `Extremely obese`;
-    bmiNum = ` ${roundBMI}`;
+    bmiNum;
   }
   document.getElementById("BMI").innerHTML = bmiMassage;
-  document.getElementById("numberBMI").innerHTML = `${roundBMI}`;
+  document.getElementById("numberBMI").innerHTML = bmiNum;
 });

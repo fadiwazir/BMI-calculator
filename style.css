@@ -63,6 +63,12 @@ body {
   border-radius: 18px;
   box-shadow: inset 0 0 4px 1px #d62828;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .container input::placeholder {
   color: rgba(77, 77, 77, 0.644);
   font-size: 14px;
